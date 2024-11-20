@@ -1,0 +1,228 @@
+:root {
+    --negro: #000;
+    --color-texto: #fff;
+    --whatsapp:#008000;
+    --instagram:#a52a2a;
+    --discord:#174ad6;
+    --morado: #800080;
+    
+}
+
+body {
+    background-image: url('../imagenes/everest.jpg'); /* Fondo de pantalla */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+body{
+    font-family: "Geist Mono";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* Esto hace que 1rem sea igual a 10px */
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    background-color: var(--negro);
+    padding: 1.5rem;
+    text-align: center;
+    margin-block-end: 1.5rem;
+    width: 100%;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;  /* Mantiene el nav en la parte superior */
+    top: 1rem;
+    right: 1rem;  /* Alineación a la derecha */
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en una fila en pantallas grandes */
+    justify-content: flex-start;
+}
+
+nav ul li {
+    display: inline-block;  /* Los elementos estarán en línea (de izquierda a derecha) */
+    margin: 0 1.5rem; /* Aquí se ha aumentado el margen a 1.5rem para separarlos más */
+    margin-top: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #9b59b6; /* Color morado en hover */
+    transform: translateY(-5px); /* Efecto de flotar */
+}
+
+a:focus {
+    outline: 2px solid var(--verde);
+    background-color: rgba(76, 175, 80, 0.1);
+    transition: background-color 0.2s, outline 0.3s;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column; /* Por defecto, los elementos estarán en columna */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenido > div {
+    margin: 1rem 0; /* Espaciado entre los divs */
+}
+
+.titulo-contenido h2 {
+    font-size: 2.5rem;
+}
+
+.descripcion p {
+    font-size: 2rem;
+}
+
+.acciones .btn {
+    padding: 1rem 1.5rem;
+    background-color: var(--morado);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    border-radius: 5px;
+    text-decoration: none; /* Eliminamos el subrayado del enlace */
+    display: inline-block; /* Hace que el enlace tenga el comportamiento de un bloque en línea */
+}
+
+.acciones .btn:hover {
+    background-color: var(--morado);
+    transform: translateY(-5px);
+}
+
+.acciones .btn:focus {
+    outline: 3px solid var(--morado);
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.1);
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+footer {
+    text-align: center;
+    padding: 2.5rem;
+    color: white;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        right: 1rem;
+        top: 1rem;
+        width: auto;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .titulo-contenido h2 {
+        font-size: 2rem;
+    }
+
+    .descripcion p {
+        font-size: 1.8rem;
+    }
+
+    .acciones .btn {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Asegúrate de que el contenedor tenga el tamaño adecuado */
+.div-contacto {
+    display: flex;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center;     /* Centra los íconos verticalmente */
+    margin-top: 2rem;
+}
+
+/* Contenedor de los íconos, agrega un tamaño adecuado */
+.rss a {
+    display: inline-block;
+    margin: 0 1rem; /* Espaciado entre los íconos */
+}
+
+.bi{
+    width: 3rem;
+    height: 3rem;
+}
+
+.bi-whatsapp{
+    color: var(--whatsapp);
+}
+
+.bi-instagram{
+    color: var(--instagram);
+}
+
+.bi-discord{
+    color: var(--discord);
+}
+
+
+
+
+.imagen-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+img{
+    height: 15rem;
+    width: 15rem;
+}
+
+
+
+
+
