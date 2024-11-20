@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url('../imagenes/everest.jpg'); /* Fondo de pantalla */
+    background-image: url('../imagenes/everest.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body{
 }
 
 html {
-    font-size: 62.5%; /* Esto hace que 1rem sea igual a 10px */
+    font-size: 62.5%; 
 }
 
 body {
@@ -51,17 +51,17 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    position: absolute;  /* Mantiene el nav en la parte superior */
+    position: absolute;  
     top: 1rem;
-    right: 1rem;  /* Alineación a la derecha */
+    right: 1rem; 
     display: flex;
-    flex-direction: row; /* Alinea los elementos en una fila en pantallas grandes */
+    flex-direction: row; 
     justify-content: flex-start;
 }
 
 nav ul li {
-    display: inline-block;  /* Los elementos estarán en línea (de izquierda a derecha) */
-    margin: 0 1.5rem; /* Aquí se ha aumentado el margen a 1.5rem para separarlos más */
+    display: inline-block;  
+    margin: 0 1.5rem; 
     margin-top: 2rem;
 }
 
@@ -74,8 +74,8 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #9b59b6; /* Color morado en hover */
-    transform: translateY(-5px); /* Efecto de flotar */
+    color: #9b59b6; 
+    transform: translateY(-5px);
 }
 
 a:focus {
@@ -94,14 +94,14 @@ a:focus {
 
 .contenido {
     display: flex;
-    flex-direction: column; /* Por defecto, los elementos estarán en columna */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 .contenido > div {
-    margin: 1rem 0; /* Espaciado entre los divs */
+    margin: 1rem 0; 
 }
 
 .titulo-contenido h2 {
@@ -120,8 +120,8 @@ a:focus {
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.3s ease;
     border-radius: 5px;
-    text-decoration: none; /* Eliminamos el subrayado del enlace */
-    display: inline-block; /* Hace que el enlace tenga el comportamiento de un bloque en línea */
+    text-decoration: none;
+    display: inline-block; 
 }
 
 .acciones .btn:hover {
@@ -142,7 +142,6 @@ footer {
     color: white;
 }
 
-/* Media Queries para responsividad */
 @media (max-width: 768px) {
     nav ul {
         position: absolute;
@@ -173,20 +172,23 @@ footer {
     footer p {
         font-size: 0.9rem;
     }
+    h1{
+        margin-right: 10rem;
+    }
 }
 
-/* Asegúrate de que el contenedor tenga el tamaño adecuado */
+
 .div-contacto {
     display: flex;
-    justify-content: center; /* Centra los íconos horizontalmente */
-    align-items: center;     /* Centra los íconos verticalmente */
+    justify-content: center;
+    align-items: center;    
     margin-top: 2rem;
 }
 
-/* Contenedor de los íconos, agrega un tamaño adecuado */
+
 .rss a {
     display: inline-block;
-    margin: 0 1rem; /* Espaciado entre los íconos */
+    margin: 0 1rem; 
 }
 
 .bi{
