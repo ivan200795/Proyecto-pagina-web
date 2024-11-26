@@ -24,7 +24,7 @@ body {
     background-color: var(--color-fondo-oscuro);
 }
 
-/* Estilos del header */
+
 .header {
     display: flex;
     justify-content: center;
@@ -69,10 +69,9 @@ body {
 
 .navbar a:focus {
     background: var(--color-hover);
-    outline: none;
 }
 
-/* Estilo de la sección principal */
+
 .header {
     height: 60vh;
     background: url('../imagenes/header.jpg') no-repeat center;
@@ -101,7 +100,7 @@ p {
     color: var(--color-texto-blanco);
     text-decoration: none;
     background: var(--color-principal);
-    transition: background 0.3s ease;
+   
 }
 
 .btn:hover {
@@ -149,7 +148,6 @@ p {
     margin: 2rem;
     padding: 2rem;
     overflow: hidden;
-    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .box-container .box:hover {
@@ -219,12 +217,17 @@ h3, p {
         padding: 1rem;
     }
 
+    .logo{
+        padding-left: 12rem;
+    }
+
     .logo a {
         font-size: 1.8rem;
     }
 
     .navbar {
         flex-direction: row;
+        padding-left: 4.5rem;
     }
 
     .navbar a {
