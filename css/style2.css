@@ -5,6 +5,7 @@
     --instagram:#a52a2a;
     --discord:#174ad6;
     --morado: #800080;
+    --color-morado2: #9c27b0;
     
 }
 
@@ -48,7 +49,7 @@ header {
 }
 
 nav ul {
-    list-style-type: none;
+    
     padding: 0;
     margin: 0;
     position: absolute;  
@@ -65,23 +66,16 @@ nav ul li {
     margin-top: 2rem;
 }
 
+
+
 a {
     color: white;
     text-decoration: none;
     font-size: 2rem;
-    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #9b59b6; 
-    transform: translateY(-5px);
-}
-
-a:focus {
-    outline: 2px solid var(--verde);
-    background-color: rgba(76, 175, 80, 0.1);
-    transition: background-color 0.2s, outline 0.3s;
+.navbar a:focus {
+    background: var(--color-morado2);
 }
 
 .main {
@@ -112,28 +106,20 @@ a:focus {
     font-size: 2rem;
 }
 
-.acciones .btn {
+.ola .btn {
     padding: 1rem 1.5rem;
     background-color: var(--morado);
     color: white;
     border: none;
-    cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.3s ease;
     border-radius: 5px;
     text-decoration: none;
     display: inline-block; 
 }
 
-.acciones .btn:hover {
-    background-color: var(--morado);
+.ola .btn:hover {
+    background: none;
     transform: translateY(-5px);
-}
-
-.acciones .btn:focus {
-    outline: 3px solid var(--morado);
-    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
-    background-color: rgba(128, 0, 128, 0.1);
-    transition: box-shadow 0.3s, background-color 0.3s;
+    border: solid var(--color-morado2);
 }
 
 footer {
@@ -164,7 +150,7 @@ footer {
         font-size: 1.8rem;
     }
 
-    .acciones .btn {
+    .ola .btn {
         width: 100%;
         padding: 1rem;
     }
@@ -223,6 +209,7 @@ img{
     height: 15rem;
     width: 15rem;
 }
+
 
 
 
