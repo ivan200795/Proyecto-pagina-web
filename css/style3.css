@@ -58,6 +58,10 @@ body {
     font-size: 2rem;
 }
 
+h3,h2{
+    padding-top: 2rem;
+}
+
 .navbar a {
     display: block;
     padding: 2rem 2rem;
@@ -123,6 +127,10 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.title span{
+    color: lightsteelblue;
 }
 
 .sau {
@@ -264,6 +272,7 @@ h3, p {
         width: 10rem;
     }
 }
+
 
 
 
