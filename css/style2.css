@@ -86,6 +86,7 @@ a {
     padding: 2rem;
 }
 
+
 .contenido {
     display: flex;
     flex-direction: column; 
@@ -98,12 +99,17 @@ a {
     margin: 1rem 0; 
 }
 
+
 .titulo-contenido h2 {
     font-size: 2.5rem;
 }
 
 .descripcion p {
     font-size: 2rem;
+}
+
+.descripcion span{
+    color: darkgrey;
 }
 
 .ola .btn {
