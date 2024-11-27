@@ -6,6 +6,9 @@
     --color-texto-oscuro: #101010;
     --color-hover: #9c27b0;
     --color-gris: grey;
+    --whatsapp:#008000;
+    --discord:#174ad6;
+    --instagram:#a52a2a;
 }   
 
 * {
@@ -226,8 +229,14 @@ h3, p {
 
 .bi-whatsapp{
     color: var(--whatsapp);
+    
 }
-
+.bi-discord{
+    color: var(--discord);
+}
+.bi-instagram{
+    color: var(--instagram);
+}
 
 @media (max-width: 767px) {
     .head {
