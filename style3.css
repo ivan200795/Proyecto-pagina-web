@@ -195,7 +195,7 @@ p {
 }
 
 #inicio:target {
-    border: 2px solid var(--color-texto-blanco);
+    border: 0.2rem solid var(--color-texto-blanco);
 }
 
 h3, p {
