@@ -71,6 +71,10 @@ h3,h2{
     font-size: 2rem;
 }
 
+.navbar a:hover{
+    color: grey;
+}
+
 .navbar a:focus {
     background: var(--color-hover);
 }
