@@ -25,7 +25,9 @@ body {
     background-color: var(--color-fondo-oscuro);
 }
 
-
+p{
+    text-align: justify;
+{
 
 
 .header {
