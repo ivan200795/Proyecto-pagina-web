@@ -53,17 +53,6 @@ body {
     margin-right: 1rem;
 }
 
-.logo {
-    margin-left: 3rem;
-}
-
-.logo a {
-    text-decoration: none;
-    color: var(--color-texto-blanco);
-    text-transform: uppercase;
-    font-size: 2rem;
-}
-
 h3,h2{
     padding-top: 2rem;
 }
@@ -244,15 +233,6 @@ h3, p {
         flex-direction: column;
         align-items: flex-start;
         padding: 1rem;
-    }
-
-    .logo{
-        padding-left: 14rem;
-    }
-
-    .logo a {
-        font-size: 1.8rem;
-        
     }
     
     .navbar {
