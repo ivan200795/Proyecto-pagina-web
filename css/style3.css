@@ -31,11 +31,13 @@ body {
 
 
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+p{
+    text-align: justify;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
+
 
 .navbar {
     display: flex;
