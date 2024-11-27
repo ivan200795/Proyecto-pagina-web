@@ -6,7 +6,8 @@
     --discord:#174ad6;
     --morado: #800080;
     --color-morado2: #9c27b0;
-    
+    --titulo:#1f1d1d;
+    --hover: gray;
 }
 
 body {
@@ -79,7 +80,7 @@ a {
 }
 
 .navbar a:hover{
-    color: gray;
+    color: var(--gray);
 }
 
 .main {
@@ -113,7 +114,7 @@ a {
 }
 
 .descripcion span{
-    color: darkgrey;
+    color: var(--titulo);
 }
 
 .ola .btn {
