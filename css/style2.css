@@ -40,6 +40,11 @@ body {
     margin: 0;
 }
 
+#id1{
+    color: var(--titulo);
+}
+
+
 header {
     background-color: var(--negro);
     padding: 1.5rem;
