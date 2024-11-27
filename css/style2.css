@@ -45,6 +45,10 @@ body {
 }
 
 
+p{
+    text-align: justify;
+}
+
 header {
     background-color: var(--negro);
     padding: 1.5rem;
