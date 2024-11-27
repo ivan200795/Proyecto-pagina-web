@@ -225,7 +225,7 @@ h3, p {
 }
 
 .bi-whatsapp{
-    color:green;
+    color: var(--color-texto-blanco );
 }
 
 
