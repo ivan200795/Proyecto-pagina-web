@@ -37,20 +37,14 @@ body {
     align-items: center;
 }
 
-.head {
+.navbar {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    height: 6.3rem;
-    background: var(--color-fondo-oscuro);
     position: fixed;
     width: 100%;
     z-index: 100;
-}
-
-.navbar {
-    display: flex;
-    margin-right: 1rem;
+    background-color: var(--color-texto-oscuro);
 }
 
 h3,h2{
@@ -229,12 +223,6 @@ h3, p {
 }
 
 @media (max-width: 767px) {
-    .head {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-    }
-    
     .navbar {
         display: flex;
         flex-direction: column;
