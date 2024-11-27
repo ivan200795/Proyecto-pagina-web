@@ -1,0 +1,289 @@
+:root {
+    --color-principal: #9c27b0;
+    --color-fondo-oscuro: #171717;
+    --color-fondo-claro: #1f1d1d;
+    --color-texto-blanco: #fff;
+    --color-texto-oscuro: #101010;
+    --color-hover: #9c27b0;
+    --color-gris: grey;
+}   
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Geist Mono", sans-serif;
+    background-color: var(--color-fondo-oscuro);
+}
+
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.3rem;
+    background: var(--color-fondo-oscuro);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.logo {
+    margin-left: 3rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--color-texto-blanco);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h3,h2{
+    padding-top: 2rem;
+}
+
+.navbar a {
+    display: block;
+    padding: 2rem 2rem;
+    color: var(--color-texto-blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.navbar a:hover{
+    color:var(--color-gris);
+}
+
+.navbar a:focus {
+    background: var(--color-hover);
+}
+
+
+.header {
+    height: 60vh;
+    background: url('../imagenes/header.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 4rem;
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-texto-blanco);
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: var(--color-texto-blanco);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 4rem;
+    border: 0.2rem solid var(--color-principal);
+    color: var(--color-texto-blanco);
+    text-decoration: none;
+    background: var(--color-principal);
+   
+}
+
+.btn:hover {
+    background: none;
+    color: var(--color-principal);
+    border: 0.2rem solid var(--color-principal);
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0rem 1rem;
+}
+
+.content {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title span{
+    color: lightsteelblue;
+}
+
+.sau {
+    padding: 3rem;
+    background: var(--color-fondo-claro);
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: auto;
+    min-height: 11rem;
+    width: 17rem;
+    background: var(--color-texto-oscuro);
+    text-align: center;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    margin: 2rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.box-container .box:hover {
+    transform: scale(1.05);
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 2rem;
+    color: var(--color-principal);
+}
+
+.box-container .box p {
+    font-size: 1.6rem;
+    color: var(--color-texto-blanco);
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    margin: 0;
+}
+
+#inicio:target {
+    border: 2px solid var(--color-texto-blanco);
+}
+
+h3, p {
+    font-size: 2rem;
+    color: var(--color-texto-blanco);
+}
+
+.box > a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+.box-container .box p {
+    font-size: 1.4rem;
+}
+
+.bi {
+    width: 3rem;
+    height: 3rem;
+}
+
+.qr {
+    height: 15rem;
+    width: 15rem;
+    padding-top: 2rem;
+    object-fit: contain;
+}
+
+
+@media (max-width: 767px) {
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .logo{
+        padding-left: 14rem;
+    }
+
+    .logo a {
+        font-size: 1.8rem;
+        
+    }
+    
+    .navbar {
+        flex-direction: row;
+        padding-left: 4.5rem;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+        padding: 1rem ;
+        padding-left: 2rem;
+        
+    }
+
+    .title {
+        font-size: 4rem;
+        padding-top: 5rem;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-container .box {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .content {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .qr {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,226 @@
+:root {
+    --negro: #000;
+    --color-texto: #fff;
+    --whatsapp:#008000;
+    --instagram:#a52a2a;
+    --discord:#174ad6;
+    --morado: #800080;
+    --color-morado2: #9c27b0;
+    
+}
+
+body {
+    background-image: url('../imagenes/everest.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+body{
+    font-family: "Geist Mono";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    background-color: var(--negro);
+    padding: 1.5rem;
+    text-align: center;
+    margin-block-end: 1.5rem;
+    width: 100%;
+    position: relative;
+}
+
+nav ul {
+    
+    padding: 0;
+    margin: 0;
+    position: absolute;  
+    top: 1rem;
+    right: 1rem; 
+    display: flex;
+    flex-direction: row; 
+   
+}
+
+nav ul li {
+    display: inline-block;  
+    margin: 0 1.5rem; 
+    margin-top: 2rem;
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar a:focus {
+    background: var(--color-morado2);
+}
+
+.navbar a:hover{
+    color: gray;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.contenido {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenido > div {
+    margin: 1rem 0; 
+}
+
+
+.titulo-contenido h2 {
+    font-size: 2.5rem;
+}
+
+.descripcion p {
+    font-size: 2rem;
+}
+
+.descripcion span{
+    color: darkgrey;
+}
+
+.ola .btn {
+    padding: 1rem 1.5rem;
+    background-color: var(--morado);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.ola .btn:hover {
+    background: none;
+    transform: translateY(-5px);
+    border: solid var(--color-morado2);
+}
+
+footer {
+    text-align: center;
+    padding: 2.5rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        right: 1rem;
+        top: 1rem;
+        width: auto;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .titulo-contenido h2 {
+        font-size: 2rem;
+    }
+
+    .descripcion p {
+        font-size: 1.8rem;
+    }
+
+    .ola .btn {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+    h1{
+        margin-right: 10rem;
+    }
+}
+
+
+.div-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 2rem;
+}
+
+
+.rss a {
+    display: inline-block;
+    margin: 0 1rem; 
+}
+
+.bi{
+    width: 3rem;
+    height: 3rem;
+}
+
+.bi-whatsapp{
+    color: var(--whatsapp);
+}
+
+.bi-instagram{
+    color: var(--instagram);
+}
+
+.bi-discord{
+    color: var(--discord);
+}
+
+
+
+
+.imagen-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+img{
+    height: 15rem;
+    width: 15rem;
+}
+
+
+
+
+
