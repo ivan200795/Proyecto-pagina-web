@@ -92,6 +92,7 @@ h3,h2{
     font-weight: 700;
     text-transform: uppercase;
     color: var(--color-texto-blanco);
+    padding-top: 4rem;
 }
 
 p {
