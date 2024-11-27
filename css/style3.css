@@ -240,6 +240,11 @@ h3, p {
         
     }
 
+     #id2{
+        display: block;  
+        margin-top: 13rem;  
+    }
+
     .title {
         font-size: 4rem;
         padding-top: 5rem;
