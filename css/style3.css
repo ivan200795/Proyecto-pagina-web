@@ -236,8 +236,11 @@ h3, p {
     }
     
     .navbar {
-        flex-direction: row;
-        padding-left: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0; 
+        width: 100%; 
+        align-items: center;
     }
 
     .navbar a {
