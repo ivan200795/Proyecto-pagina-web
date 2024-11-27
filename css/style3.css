@@ -224,9 +224,6 @@ h3, p {
     object-fit: contain;
 }
 
-.bi-whatsapp{
-    color: var(--color-texto-blanco );
-}
 
 @media (max-width: 767px) {
     .head {
