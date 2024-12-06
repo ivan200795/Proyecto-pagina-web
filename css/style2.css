@@ -125,9 +125,17 @@ a {
 }
 
 .descripcion span{
-    color: var(--titulo);
+    color: var(--color-texto);
 }
 
+.contenido {
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px); 
+    margin: 0 5%;
+    border-radius: 1rem;
+    margin-top: 0.1rem;
+    padding: 0.05rem;
+}
 .ola .btn {
     padding: 1rem 1.5rem;
     background-color: var(--morado);
