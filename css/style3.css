@@ -125,7 +125,7 @@ p {
 }
 
 .title span{
-    color: lightsteelblue;
+    color: var(--color-texto-blanco);
 }
 
 .sau {
